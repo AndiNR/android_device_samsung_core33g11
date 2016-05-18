@@ -28,9 +28,6 @@ TARGET_BOARD_PLATFORM := sc8830
 TARGET_BOOTLOADER_BOARD_NAME := sc7730s
 
 # Kernel
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/core33g/dt.img
-
-# Kernel
 BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -40,7 +37,7 @@ BOARD_TAG_OFFSET := 0x00000100
 BOARD_MKBOOTIMG_ARGS := --dt device/samsung/core33g/dt.img
 #TARGET_PREBUILT_RECOVERY_KERNEL := device/samsung/core33g/kernel
 #TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
-TARGET_KERNEL_CONFIG := vivalto5mve3g_hw00_defconfig
+TARGET_KERNEL_CONFIG := core33g_hw00_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/core33g
 #BOARD_USES_UNCOMPRESSED_BOOT := true
 

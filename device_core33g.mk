@@ -39,9 +39,10 @@ PRODUCT_COPY_FILES += \
 	device/samsung/core33g/audio_params/audio_para:system/etc/audio_para \
 	device/samsung/core33g/audio_params/audio_policy.conf:system/etc/audio_policy.conf
 
-# Media
-PRODUCT_COPY_FILES += \
-        device/samsung/core33g/media_codecs.xml:system/etc/media_codecs.xml \
+# Media config
+MEDIA_CONFIGS := \
+	$(LOCAL_PATH)/media_codecs.xml \
+	$(LOCAL_PATH)/media_profiles.xml
 
 # Usb accessory
 PRODUCT_PACKAGES += \
